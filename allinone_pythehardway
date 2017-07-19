@@ -1,0 +1,238 @@
+print "Hello World!"
+print "Hello Again!"
+print "I like typing this"
+print "This is fun!"
+print 'Yay! Printing!'
+print "I'd much rather ou 'not'..."
+print 'I said do not touch this.'
+# iLearning how to comment...
+# now if I could figure out multi line comments, I'd be all set on that
+
+# A comment, this is so you can read your program later.
+# Anything after the # is ignored by Python Multi line comments just all have
+# the # symbol before them. no shorthand in this language.
+
+print "I could have code like this"  # and the comment after is ignored
+
+# you can also use a comment to 'disable' or comment out a piece of code:
+# print 'This won't run'
+
+print "this will run"
+print "I will now count my chickens"
+print "          "
+print "          "
+# This is using pythons built in order of operations.
+# addition comes near last, so division gets priority
+print "Hens", 25.0 + 30.0 / 6.0
+# Not a fucking clue on thsi one
+print "Roosters", 100.0 - 25.0 * 3.0 % 4.0  # pemdas
+
+print "Now I will count the eggs:"
+# here either.
+print 3.0 + 2.0 + 1.0 - 5.0 + 4.0 % 2.0 - 1.0 / 4.0 + 6.0
+# does both equations, calcs which is greater
+print "Is it true that 3+2<5-7?"
+print 3.0 + 2.0 < 5.0 - 7.0
+
+print "What is 3+2?", 3.0 + 2.0
+print "What is 5+7?", 5.0 + 7.0
+
+print "Oh, that's why it's false."
+
+print "How about some more?"
+
+print "Is it greater?", 5.0 > - 2.0
+print "Is it greater or equal?", 5.0 >= -2.0
+print "Is it less or equal?", 5.0 <= -2.0
+print "With floating point, 7/4=", 7.0 / 4.0
+print "Without Floating point, 7/4=", 7 / 4
+print "          "
+print "          "
+
+# Also need to learn what a floating point is, what it has to do with
+# diplsying non whole numbers such as decimal points, and how to utilize
+# them in equational code.
+
+# Turns out if you add a decimal spot, even if .0 after a number, it
+# bypasses pythons want to round to the nearest whole number. Adding this
+# is what allows the use of floating points. Boosh.
+
+
+# these define the math to work off of
+cars = 100
+space_in_a_car = 4.0
+drivers = 30
+passengers = 90
+# these define what to do with said integers when called for in the script
+cars_not_driven = cars - drivers
+cars_driven = drivers
+carpool_capacity = cars_driven * space_in_a_car
+average_passengers_per_car = passengers / cars_driven
+
+# this is the actual script itself, and will output the desired results
+print "There are", cars, "cars available."
+print "There are only", drivers, "drivers available."
+print "There will be", cars_not_driven, "empty cars today."
+print "We can transport", carpool_capacity, "people today."
+print "We have", passengers, "to carpool today."
+print "We need to put about", average_passengers_per_car, "in each car."
+print "          "
+print "          "
+# This is my own customized payraise script to determine what my
+# recent promotion nets in income change.
+posttaxhourly = 8.4
+weeklyhours = 40.0
+weeklytakehome = posttaxhourly * weeklyhours
+weeksinmonth = 4.0
+monthlytakehome = weeklytakehome * weeksinmonth
+monthsinyear = 12.0
+yearlytakehome = monthlytakehome * monthsinyear
+
+print "My takehome per hour is", posttaxhourly
+print "My weekly paycheck after 40 hours of work is", weeklytakehome
+print "My monthly takehome based on said weekly income is", monthlytakehome
+print "This make my yearly salary", yearlytakehome
+
+# Notes on variables: var/variables are defined as something=something else. you can multiply
+# variables, subtract, etc by using variable*variable, and further define a
+# new variable as something=something*something
+print "          "
+print "          "
+my_name = 'Zed A. Shaw'
+my_age = 35  # not a lie
+my_height = 74  # inches
+my_weight = 180  # lbs
+my_eyes = 'blue'
+my_teeth = 'white'
+my_hair = 'brown'
+
+print "Let's talk about %s." % my_name
+print "He's %d inches tall." % my_height
+print "He's %d pounds heavy." % my_weight
+print "Actually that's not too heavy."
+print "He's got %s eyes and %s hair." % (my_eyes, my_hair)
+print "His teeth are usually %s depending on the coffee." % my_teeth
+
+# this line is tricky, try to get it exactly right
+print "If I add %d, %d, and %d I get %d." % (
+    my_age, my_height, my_weight, my_age + my_height + my_weight)
+print "          "
+print "          "
+# learn more format characters, like %d and %s
+
+# you can use the round() command to round a nyumber to nearest whole
+# and get rid of the floating point. ndigits is an optional modifier
+# that determines the amount of digits after the ones place. nothing
+# there makes it a whole number entirely
+print round(5.8359224, ndigits=3)
+print round(5.8359224)
+
+x = "There are %d types of people." % 10
+binary = "binary"
+do_not = "don't"
+y = "Those who don't know %s and those who %s." % (binary, do_not)
+
+print x
+print y
+
+print "I said: %r." % x
+print "I also said: '%s'." % y
+
+hilarious = False
+joke_evaluation = "Isn't that joke so funny?! %r"
+
+print joke_evaluation % hilarious
+print "          "
+print "          "
+w = "This is the left side of..."
+e = "a string with a right side."
+
+print w + e
+
+print "mary had a little lamb."
+print "It's fleece was white as %s." % 'snow'
+print "And everywhere that Mary went."
+print "." * 10  # What'd that do?
+print "          "
+print "          "
+# It multiplied the character '.' by 10 and printed it.
+end1 = "C"
+end2 = "h"
+end3 = "e"
+end4 = "e"
+end5 = "s"
+end6 = "e"
+end7 = "b"
+end8 = "u"
+end9 = "r"
+end10 = "g"
+end11 = "e"
+end12 = "r"
+
+# Watch that comma at the end. Try removing it and see what happens...
+print end1 + end2 + end3 + end4 + end5 + end6,
+print end7 + end8 + end9 + end10 + end11 + end12
+
+print end1 + end2 + end3 + end4 + end5 + end6
+print end7 + end8 + end9 + end10 + end11 + end12
+
+# It seperated the line when removed. comma attatched it to the
+# same output line. Anything past 80 characters on one line is
+# considered bad style in python, thus why he seperated this out
+# rather than long ass one lining it. Makes sense.
+print "          "
+print "          "
+formatter = "%r %r %r %r"
+
+print formatter % (1, 2, 3, 4)
+print formatter % ("one", "two", "three", "four",)
+print formatter % (True, False, False, True)
+print formatter % (formatter, formatter, formatter, formatter)
+print formatter % (
+    "I had this thing.",
+    "That you could type up right.",
+    "But it didn't sing.",
+    "So I said goodnight."
+)
+
+
+# words need qoutes. Things like True and false do not
+# True/False are keywords in python that have built in representation
+# whereas one, two, truck, etc, are not recognized as anything unless
+# assigned as a variable.
+print "          "
+print "          "
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+print "Here are the days: ", days
+print "here are the Months: ", months
+
+print """
+There's something going on here.
+With three double-qoutes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+"""
+
+
+tabby_cat = "\tI'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat"
+
+fat_cat = """
+I'll do a list:
+\t* Cat Food
+\t* Fishies
+\t* Catnip\n\t* Grass
+"""
+
+print tabby_cat
+print persian_cat
+print backslash_cat
+print fat_cat
+
+print " "
+print " "
+
+print "Asking questions done in seperate document named "Asking Questions.py" bla bla bla bla bla bla bla bla"
